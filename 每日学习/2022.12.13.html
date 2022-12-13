@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2022.12.13</title>
+</head>
+<body><
+   target属性，用来指定超链接打开的位置
+          可选值 _self默认值 在当前页面打开超链接
+               _blank 在一个新的页面中打开超链接
+               <a href="2022.12.12.html" target="blank"> 超链接</a>
+<br><br>
+<a  href="#bottom">去底部</a>
+<a href="javascript:">一个新的超链接</a>（点开无事发生）
+用img标签引入外部图片，img是一个自结束标签
+img 属于替换元素（块与行内元素之间，具有两种元素的特点）
+属性
+    src属性是外部图片的路径（路径规则与超链接规则一样）
+    alt 图片的描述，这个描述默认下不会显示
+    width  宽度（单位为像素）
+    height 高度
+       如果只修改了一个，另一个会等比例缩放
+    <img width="400" src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fblog.playstation.com%2Ftachyon%2F2022%2F06%2F0c3c20a8d8514501524a0859461f391572ea6e61.jpg&imgrefurl=https%3A%2F%2Fblog.playstation.com%2F2022%2F06%2F02%2Fmarvels-spider-man-series-is-coming-to-pc%2F&tbnid=vEKTI9-G9jUH0M&vet=12ahUKEwi7vJ3G3vX7AhWV3HMBHemmDcMQMygFegUIARCuAg..i&docid=B2EbJKszuNkOrM&w=1920&h=1080&q=spiderman&ved=2ahUKEwi7vJ3G3vX7AhWV3HMBHemmDcMQMygFegUIARCuAg" alt="spider man" >
+  <!-- jpeg(jpg)
+     -支持颜色丰富，不支持透明效果，不支持动图
+     -一般用来显示照片
+   gif
+      -支持颜色较少，支持简单透明，支持动图
+      -颜色单一的图片，动图
+   png
+      -支持颜色丰富，支持复杂透明，不支持动图
+      -颜色丰富，复杂透明图片（专为网页而生）
+   webp
+      -谷歌专门为网页做的
+      -具备各种优点，文件还小
+      -缺点：兼容性不好
+   base64
+      -将图片用base64编码，将图片变成字符，通过字符形式引用图片
+      -一般是网页与图片需要同时加载才需要用这个
+
+  效果一样，用小的
+  效果不一样，用好的
+  内联框架，用于向当前页面中引用一个其他页面
+    src 指定要引入的网页的路径
+    frameborder指定内联框架的边框 1有0没
+  -->
+<iframe src="http://www.qq.com" width="800" height="600" ></iframe>
+audio标签用来引用一个外部的音频文件
+默认情况下不允许用户操作
+属性
+controls 是否允许用户控制播放
+autoplay 音频是否自动播放（大部分不适配）
+loop音乐是否循环播放
+<!--
+<audio controls>
+    对不起，您的浏览器不支持播放，请升级
+    <source src="链接.mp3">
+    <source src="链接.ogg">
+    <embed src="链接.mp3" type="audio/mp3 width="300"
+</audio>
+-->
+使用video标签与audio一样
+<!--
+<video controls>
+    对不起，您的浏览器不支持播放，请升级
+    <source src="链接.webm3">
+    <source src="链接.mp4">
+    <embed src="链接.mp4" type="video/mp4" "
+</video>
+-->
+<a id="bottom" href="#">去顶部</a>
+</body>
+</html>
